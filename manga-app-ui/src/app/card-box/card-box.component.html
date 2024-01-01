@@ -1,0 +1,30 @@
+<div class="album py-5 bg-color mx-auto">
+  <div class="container">
+
+    <div class="section-header">
+      <h4>New Manga</h4>
+      <p>New Manga's added to the website.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      <div class="col" *ngFor="let manga of mangaList">
+        <div class="card shadow">
+          <img [src]="manga.imageUrl" class="card-img-top" alt="Manga Cover" />
+          <div class="card-body">
+            <p class="card-text fs-5">{{ manga.title }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-md btn-outline-secondary">
+                  read
+                </button>
+              </div>
+              <small class="text-body-secondary px-3">
+                {{ manga.chapterCount }} chapters
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

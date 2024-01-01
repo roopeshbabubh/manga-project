@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="section-header">
+        <h4>Recent updates</h4>
+        <p>Updated manga's.</p>
+    </div>
+
+    <div class="scroll-bar">
+        <ul class="manga-list">
+            <li *ngFor="let updatedManga of updatedMangas" class="manga-item">
+                <div class="manga-img">
+                    <img [src]="updatedManga.imageUrl" alt="Manga Cover">
+                </div>
+                <div class="manga-details">
+                    <strong class="category">{{ updatedManga.category }}</strong>
+                    <h3 class="title">{{ updatedManga.title }}</h3>
+                    <div class="date">{{ updatedManga.date }}</div>
+                    <p class="content">{{ updatedManga.content }}</p>
+                    <a href="#" class="read-more">Read now</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

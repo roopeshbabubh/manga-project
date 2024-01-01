@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="section-header">
+    <h4>Recent updates</h4>
+    <p>Updated manga's.</p>
+  </div>
+  <div class="scroll-bar">
+    <div class="image-list">
+      <div class="image-item" *ngFor="let manga of updatedMangas; let i = index">
+        <img [src]="manga.imageUrl" alt="Image {{ i + 1 }}">
+        <div class="image-title">{{ manga.title }}</div>
+      </div>
+    </div>
+  </div>
+</div>

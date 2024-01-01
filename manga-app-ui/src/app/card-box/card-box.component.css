@@ -1,0 +1,42 @@
+.bg-color {
+  background-color: #FFFFFF;
+}
+
+.section-header {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px rgb(235, 147, 39), -1em 0 0.4em rgb(45, 128, 0);
+}
+
+.section-header h4 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  margin: 0;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.card-text:hover {
+  -webkit-line-clamp: unset;
+  cursor: pointer;
+}
+
+.album {
+  max-width: 1000px;
+}
+
+.py-5 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}

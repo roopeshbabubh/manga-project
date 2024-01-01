@@ -1,0 +1,18 @@
+.nav-pills .nav-link.active {
+    background-color: #711DB0;
+}
+
+.input-group-text {
+    background-color: #FFB534;
+    transition: background-color 0.3s ease; 
+}
+
+.input-group:hover .input-group-text,
+.btn-warning:hover {
+    background-color: #65B741;
+    box-shadow: 0 0 20px 0 #65B741;
+    border: #65B741;
+}
+
+
+
